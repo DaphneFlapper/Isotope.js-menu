@@ -1,0 +1,136 @@
+/* style */
+
+html {
+  background-image: url("italian.jpg");
+  z-index: -1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  width: 50rem;
+  height: auto;
+  background-color: #E8D3C3;
+  opacity: 0.8;
+  padding: 2rem;
+  box-shadow: 0 0 40px 0.1px  black;
+}
+
+h1 {
+  align-content: center;
+  width: 8rem;
+  margin: 0 auto 1rem auto;
+  font-family: 'Arvo', serif;
+  font-size: 3rem;
+
+}
+
+.container{
+  border-top: 1px solid #805F55;
+}
+
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  margin: 1rem 1rem;
+  background: none;
+  border-radius: 6px;
+  border: none;
+  border-bottom: 1px dashed #805F55;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-bottom: 4px solid #965F5D;
+}
+
+.button:active,
+.button.is-checked {
+  border-bottom: 4px solid #965F5D;
+}
+
+.button.is-checked {
+  color: black;
+}
+
+
+.button:focus{
+  outline:none;
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+  width: 50rem;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+}
+
+.filters-button-group {
+  width: 31rem;
+  margin: 0 auto;
+}
+
+.sort-by-button-group button {
+  position: absolute;
+  top: 9rem;
+  right: 22rem;
+  width: 4rem;
+  z-index: 1;
+
+}
+
+
+/* ---- grid ---- */
+
+.grid {
+  display: block;
+
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+  margin: 0 auto;
+}
+
+/* ---- .element-item ---- */
+
+
+
+.element-item > * {
+  width: 48rem;
+  padding: 0 1rem 0 1rem;
+}
+
+.element-item {
+  margin: 2rem auto 0 auto;
+  border-bottom: 1px dashed #805F55;
+}
+
+.element-item p:nth-child(3){
+  text-align: right;
+  font-style: italic;
+
+}
+
+ .Nagerecht p{
+  text-align: right;
+  font-style: italic;
+}
